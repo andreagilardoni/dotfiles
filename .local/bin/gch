@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo $@ | pcregrep -o -o1 -o2 --om-separator=' ' '^(?:\w+\:\/\/)?(?:\w+@)?(?P<site>(?:\w+\.?)+)(?:\:\d*)?\/?(?P<slugs>(?:[\w-]*\/?)+)(?:\.git)?$' | xargs -l bash -c 'git clone $0 $GIT_REPOS/$1/$2'
