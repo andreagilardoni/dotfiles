@@ -75,6 +75,7 @@ plugins=(
 	golang
 	docker
 	kube-ps1
+	kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -107,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 export GIT_REPOS=$HOME/Projects/git/
 source <(kubectl completion zsh)
 source <(helm completion zsh)
+source <(talosctl completion zsh)
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
