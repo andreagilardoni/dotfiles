@@ -1,3 +1,6 @@
 [submodule "ohmyzsh"]
 	path = .oh-my-zsh
 	url = https://github.com/andreagilardoni/ohmyzsh.git
+[submodule ".local/kubectx"]
+	path = .local/kubectx
+	url = https://github.com/ahmetb/kubectx

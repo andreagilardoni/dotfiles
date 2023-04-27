@@ -115,3 +115,13 @@ function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;
 export GOROOT=/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/gilaquila/.local/google-cloud-sdk/path.zsh.inc' ]; then . '/home/gilaquila/.local/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/gilaquila/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/gilaquila/.local/google-cloud-sdk/completion.zsh.inc'; fi
+
+fpath=(~/.zsh/completions $fpath)
+
+autoload -U compinit && compinit

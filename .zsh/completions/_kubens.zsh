@@ -1,0 +1,1 @@
+/home/gilaquila/.local/kubectx/completion/_kubens.zsh
