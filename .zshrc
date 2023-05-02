@@ -109,6 +109,8 @@ export GIT_REPOS=$HOME/Projects/git/
 source <(kubectl completion zsh)
 source <(helm completion zsh)
 source <(talosctl completion zsh)
+source <(cilium completion zsh)
+
 
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 
@@ -125,3 +127,4 @@ if [ -f '/home/gilaquila/.local/google-cloud-sdk/completion.zsh.inc' ]; then . '
 fpath=(~/.zsh/completions $fpath)
 
 autoload -U compinit && compinit
+alias watch="watch --color"
